@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:task1/data/app_routes.dart';
 import 'package:task1/screens/home_screen.dart';
 import 'package:task1/screens/login_screen.dart';
+import 'package:task1/screens/shedule.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,10 +17,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: AppRoutes.login,
+      initialRoute: AppRoutes.home,
       routes: {
         AppRoutes.login: (context) => const LoginScreen(),
         AppRoutes.home: (context) => const HomeScreen(),
+        AppRoutes.schedule: (context) => const Shedule(),
       },
     );
   }
